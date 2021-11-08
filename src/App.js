@@ -1,8 +1,8 @@
-mport React, { Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Layout from './components/layout/Layout';
-import LoadingSpinner from './components/ui/LoadingSpinner';
+import Layout from './components/layout/layout';
+import LoadingSpinner from './components/UI/LoadingSpinner';
 
 const NewQuote = React.lazy(() => import('./pages/NewQuote'));
 const QuoteDetail = React.lazy(() => import('./pages/QuoteDetail'));
